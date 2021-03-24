@@ -1,0 +1,198 @@
+body::-webkit-scrollbar {
+    display: none;
+}
+
+@font-face {
+    font-family: Ferrari;
+    src: url("../css/font/FerroRosso.ttf");
+  }  
+
+.body{
+    overflow: hidden;
+    padding-top: 30px;
+    padding-bottom: 30px; 
+    padding-right: 25%;
+    padding-left: 25%;
+    background-color: rgb(255, 255, 255);
+    font-size: larger;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif, Ferrari;
+}
+
+p, li, td, tr, a { 
+    font-size: 18px;
+    text-align: justify;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+mark { 
+    background-color: yellow;
+    color: black;
+  }
+
+/*title*/
+h2 { 
+    text-align: center; 
+    font-family: Ferrari; 
+    font-size: 60px;
+    font-weight: bold; color:rgb(228, 0, 0); 
+}
+h3 { 
+    text-align: center; 
+    font-size: 40px;
+    font-family: Ferrari; 
+    color: rgb(228, 0, 0); 
+}
+h4 { 
+    text-align: center; 
+    font-size: 20px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color: white;
+}
+.m1right{
+    margin-right: 850px;
+}
+
+h2, h3, h4{
+    margin: auto;
+    border-radius: 25px;
+    background: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+/*header*/
+header.masthead {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-image: url("../img/F1_Ferrari.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+} 
+
+h1 { 
+    text-align: center; 
+    font-family: Ferrari; 
+    font-size: 150px;
+    color:rgb(228, 0, 0); 
+    margin-right: 35%; 
+    margin-left: 35%;
+    border-radius: 25px;
+    background: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+/*inutilizzati
+header.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+header.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}*/
+
+/*navbar*/
+.nav{
+    background-color: #333;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+}
+  
+li.nav{
+    float: left;
+}
+  
+li.nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+  
+li.nav a:hover:not(.active) {
+    background-color: #111;
+}
+  
+.active {
+    background-color: #a01313;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+
+/*element style*/
+.solid-border {
+    border-left-style: solid;
+    border-width: 10px;
+    border-color: rgb(228, 0, 0);
+    padding: 10px;
+}
+
+/*img on the same line*/
+* {
+    box-sizing: border-box;
+  }
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+/*table*/
+.table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+  }
+  .table td, .table th { padding: 8px; }
+  .table tr:nth-child(even){background-color: #f2f2f2;}
+  .table tr:hover {background-color: rgb(255, 94, 0);}
+  .table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #d4372c;
+    color: white;
+}
+
+.buttons {
+    background-color: rgb(255, 94, 0); /* Green */
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+
+#endtitle{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-right: 750px;
+}
