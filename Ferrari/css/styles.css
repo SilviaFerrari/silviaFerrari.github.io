@@ -48,7 +48,7 @@ h4 {
     color: white;
 }
 .m1right{
-    margin-right: 850px;
+    margin-right: 85%;
 }
 
 h2, h3, h4{
@@ -194,5 +194,5 @@ li.nav a:hover:not(.active) {
 #endtitle{
     padding-top: 30px;
     padding-bottom: 30px;
-    margin-right: 750px;
+    margin-right: 75%;
 }
