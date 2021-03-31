@@ -6,15 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
   <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
 </head>
 <body>
   <nav>
     <div>
       <ul class = "nav fixed-top">
-        <li class = "nav"><a class="active" href="https://github.com/SilviaFerrari/silviaFerrari.github.io" target="_blank" >Codice</a></li>
+        <li class = "nav"><a class="active" href="https://github.com/SilviaFerrari/html-sites" target="_blank" >Codice</a></li>
         <li class = "nav"><a href="#1">Cenni storici</a></li>
         <li class = "nav"><a href="#2">Le gare</a></li>
         <li class = "nav"><a href="#3">I modelli</a></li>
@@ -25,15 +23,18 @@
   
   <!-- Masthead-->
   <header class="masthead">
+    <audio id="audioCar">
+        <source src="multymedia/Ferrari_F1_V10_vs_V12_EPIC_Sounds[convertitoremp3.download].mp3" type="audio/mpeg">
+      </audio>
     <div>
-        <img src="img/logoandtext.png" width="15%">
+        <img src="img/logoandtext.png" width="15%" onclick="playAudio(soundCar)">
         <h1>Ferrari</h1>
         <div style="margin-right: 29%; margin-left: 29%;"><h2>Raccontata in modo intelligente</h2></div>
         <!--<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Unisciti a noi</a>-->
     </div>
   </header>  
-
-  <div class = "body">
+  <div class="sideBosdy"></div>
+  <div class = "centralBody">
     <a name="1"></a>
     <div style="margin-right: 70%;"><h3>Cenni storici</h3></div>
       <p>FERRARI è una sigla che sta per Fabbrichiamo Emeriti Ronzini Raglianti Automobili Ricopiate da McLadren Indistruttibili.
@@ -192,24 +193,14 @@
         grande cantautore Vettel:
       </p>
 
-      <audio id="myAudio">
+      <audio id="audioVettel">
         <source src="multymedia/Vettel_canta_Lasciatemi_guidare[convertitoremp3.download].mp3" type="audio/mpeg">
       </audio>
       
-      <button class = "buttons inline" onclick="playAudio()" type="button">&#9658;</button>
-      <button class = "buttons inline" onclick="pauseAudio()" type="button">Stop</button> 
+      <button class = "buttons inline" onclick="playAudio(soundVettel)" type="button">&#9658;</button>
+      <button class = "buttons inline" onclick="pauseAudio(soundVettel)" type="button">Stop</button> 
       
-      <script>
-      var x = document.getElementById("myAudio"); 
-      
-      function playAudio() { 
-        x.play(); 
-      } 
-      
-      function pauseAudio() { 
-        x.pause(); 
-      } 
-      </script>  
+      <script src="js/scripts.js"></script>
     </div>
     
 
@@ -219,7 +210,7 @@
     <a href="https://nonciclopedia.org/wiki/Kimi_R%C3%A4ikk%C3%B6nen" target="_blank">https://nonciclopedia.org/wiki/Kimi_R%C3%A4ikk%C3%B6nen</a>
     <br>
     <a href="https://www.youtube.com/watch?v=U7zXiUwBCUA" target="_blank">https://www.youtube.com/watch?v=U7zXiUwBCUA</a>
-  </div>
+    </div>
   
 </body>
 </html>
