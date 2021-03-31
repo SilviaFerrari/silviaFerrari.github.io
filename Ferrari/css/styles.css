@@ -7,7 +7,11 @@ body::-webkit-scrollbar {
     src: url("../css/font/FerroRosso.ttf");
   }  
 
-.body{
+body{
+    margin: 0;
+}
+
+.centralBody{
     overflow: hidden;
     padding-top: 30px;
     padding-bottom: 30px; 
@@ -16,6 +20,10 @@ body::-webkit-scrollbar {
     background-color: rgb(255, 255, 255);
     font-size: larger;
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif, Ferrari;
+}
+
+.sideBody{
+    background-color: #a01313;
 }
 
 p, li, td, tr, a { 
@@ -62,6 +70,7 @@ h2, h3, h4{
 header.masthead {
     padding-top: 100px;
     padding-bottom: 100px;
+    
     text-align: center;
     color: rgb(255, 255, 255);
     background-image: url("../img/F1_Ferrari.jpg");
